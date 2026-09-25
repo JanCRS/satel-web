@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satel | Productos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="SATEL" /></a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="services.html">Servicios</a>
+        <a href="products.html">Productos</a>
+        <a href="index.html">Inicio</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-section products-page">
+        <p class="eyebrow">Productos</p>
+        <h1>Colección premium</h1>
+        <p class="hero-copy">Explora nuestra selección de cámaras premium.</p>
+
+        <div class="product-shell premium-showcase">
+          <div class="product-gallery">
+            <button class="gallery-nav premium-prev" type="button" aria-label="Imagen anterior">❮</button>
+            <div class="gallery-stage">
+              <img id="premium-image" src="images/premium/cam1.jpg" alt="Vista de cámara premium" />
+            </div>
+            <button class="gallery-nav premium-next" type="button" aria-label="Imagen siguiente">❯</button>
+          </div>
+          <div id="premium-thumbnails" class="product-thumbnails"></div>
+        </div>
+
+        <div class="camera-section">
+          <h2>Cámaras</h2>
+          <div class="product-shell camera-showcase">
+            <div class="product-gallery">
+              <button class="gallery-nav camera-prev" type="button" aria-label="Imagen anterior">❮</button>
+              <div class="gallery-stage">
+                <img id="camera-image" src="images/Cámaras/cam1.jpg" alt="Cámara 1" />
+              </div>
+              <button class="gallery-nav camera-next" type="button" aria-label="Imagen siguiente">❯</button>
+            </div>
+            <div id="camera-thumbnails" class="product-thumbnails"></div>
+          </div>
+        </div>
+
+        <div class="camera-section complement-section">
+          <h2>Complementa tu instalación</h2>
+          <div class="product-shell camera-showcase complement-showcase">
+            <div class="product-gallery">
+              <button class="gallery-nav complement-prev" type="button" aria-label="Imagen anterior">❮</button>
+              <div class="gallery-stage">
+                <img id="complement-image" src="images/complementa/1.jpg" alt="Complemento para instalación 1" />
+              </div>
+              <button class="gallery-nav complement-next" type="button" aria-label="Imagen siguiente">❯</button>
+            </div>
+            <div id="complement-thumbnails" class="product-thumbnails"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="image-lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Cerrar imagen ampliada">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Imagen anterior">❮</button>
+      <img id="lightbox-image" src="" alt="" />
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Imagen siguiente">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
